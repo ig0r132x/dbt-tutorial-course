@@ -1,0 +1,23 @@
+lessons:
+  outputs:
+    dev:
+      dataset: dbt_igr
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: dbt-studies-479519
+      threads: 60
+      type: bigquery
+    production:
+      dataset: dbt_production_igr
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: dbt-studies-479519
+      threads: 60
+      type: bigquery
+  target: dev
